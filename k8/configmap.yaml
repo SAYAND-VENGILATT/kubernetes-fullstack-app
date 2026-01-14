@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: web-app
+data:
+  DB_HOST: "postgres-service"
+  DB_PORT: "5432"
+  DB_NAME: "mydatabase"
+  REDIS_HOST: "redis-service"
+  REDIS_PORT: "6379"
+  API_URL: "http://backend-service:5000"
